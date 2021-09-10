@@ -3,9 +3,7 @@ title: Hunter's Blog
 SEOTitle: 步月观山 | Hunter's Blog
 header-img: img/home-bg.jpg
 email: zhtyyx@gmail.com
-description: "愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光，就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。
-
-此后如竟没有炬火：我便是唯一的光。倘若有了炬火，出了太阳，我们自然心悦诚服的消失。不但毫无不平，而且还要随喜赞美这炬火或太阳；因为他照了人类，连我都在内。"
+description: "愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光，就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。此后如竟没有炬火：我便是唯一的光。倘若有了炬火，出了太阳，我们自然心悦诚服的消失。不但毫无不平，而且还要随喜赞美这炬火或太阳；因为他照了人类，连我都在内。"
 keyword: "Technology, philosophy, Idea"
 url: "http://zhtyyx.github.io"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -14,8 +12,8 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
-weibo_username:     步月观山
-zhihu_username:     步月
+weibo_username:     zhtyyx
+zhihu_username:     zhtyyx
 github_username:    zhtyyx
 twitter_username:  zhtyyx
 facebook_username:  zhtyyx
@@ -61,7 +59,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: 77c76de29ab871d7761eef4b6b015e54
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
 ga_domain: huangxuan.me
@@ -71,7 +69,7 @@ ga_domain: huangxuan.me
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "软件开发者，正在读毛选 & 学习项目管理"
-sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/zht.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
