@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your Blog</title>
-    <description></description>
-    <link>http://localhost:4000/huxblog-boilerplate/</link>
-    <atom:link href="http://localhost:4000/huxblog-boilerplate/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 10 Sep 2021 15:51:23 +0800</pubDate>
-    <lastBuildDate>Fri, 10 Sep 2021 15:51:23 +0800</lastBuildDate>
+    <title>Hunter's Blog</title>
+    <description>愿中国青年都摆脱冷气，只是向上走，不必听自暴自弃者流的话。能做事的做事，能发声的发声。有一分热，发一分光，就令萤火一般，也可以在黑暗里发一点光，不必等候炬火。
+此后如竟没有炬火：我便是唯一的光。倘若有了炬火，出了太阳，我们自然心悦诚服的消失。不但毫无不平，而且还要随喜赞美这炬火或太阳；因为他照了人类，连我都在内。</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 10 Sep 2021 16:12:11 +0800</pubDate>
+    <lastBuildDate>Fri, 10 Sep 2021 16:12:11 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -73,8 +74,8 @@
 译者 &lt;a href=&quot;http://weibo.com/huxpro&quot;&gt;黄玄&lt;/a&gt;，首次发布于 &lt;a href=&quot;http://huangxuan.me&quot;&gt;Hux Blog&lt;/a&gt;，转载请保留以上链接&lt;/p&gt;
 </description>
         <pubDate>Tue, 22 Sep 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/huxblog-boilerplate/2015/09/22/js-version/</link>
-        <guid isPermaLink="true">http://localhost:4000/huxblog-boilerplate/2015/09/22/js-version/</guid>
+        <link>http://localhost:4000/2015/09/22/js-version/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/09/22/js-version/</guid>
         
         <category>前端开发</category>
         
@@ -120,8 +121,8 @@
 &lt;p&gt;&lt;a href=&quot;http://lab.hakim.se/reveal-js&quot;&gt;Reveal.js&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Jul 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/huxblog-boilerplate/2015/07/09/js-module-7day/</link>
-        <guid isPermaLink="true">http://localhost:4000/huxblog-boilerplate/2015/07/09/js-module-7day/</guid>
+        <link>http://localhost:4000/2015/07/09/js-module-7day/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/07/09/js-module-7day/</guid>
         
         <category>前端开发</category>
         
@@ -434,8 +435,8 @@
 &lt;/blockquote&gt;
 </description>
         <pubDate>Mon, 25 May 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/huxblog-boilerplate/2015/05/25/js-module-loader/</link>
-        <guid isPermaLink="true">http://localhost:4000/huxblog-boilerplate/2015/05/25/js-module-loader/</guid>
+        <link>http://localhost:4000/2015/05/25/js-module-loader/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/05/25/js-module-loader/</guid>
         
         <category>前端开发</category>
         
@@ -722,8 +723,8 @@ Android’s source code is released by Google under open source licenses, althou
 &lt;p&gt;For Detail, Chromium OS based on &lt;a href=&quot;http://en.wikipedia.org/wiki/Gentoo_Linux&quot;&gt;Gentoo Linux&lt;/a&gt;, emm…&lt;/p&gt;
 </description>
         <pubDate>Tue, 14 Apr 2015 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/huxblog-boilerplate/2015/04/14/unix-linux-note/</link>
-        <guid isPermaLink="true">http://localhost:4000/huxblog-boilerplate/2015/04/14/unix-linux-note/</guid>
+        <link>http://localhost:4000/2015/04/14/unix-linux-note/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/04/14/unix-linux-note/</guid>
         
         <category>OS</category>
         
@@ -804,8 +805,8 @@ Android’s source code is released by Google under open source licenses, althou
 &lt;p&gt;—— Hux 后记于 2015.10&lt;/p&gt;
 </description>
         <pubDate>Thu, 29 Jan 2015 20:00:00 +0800</pubDate>
-        <link>http://localhost:4000/huxblog-boilerplate/2015/01/29/hello-2015/</link>
-        <guid isPermaLink="true">http://localhost:4000/huxblog-boilerplate/2015/01/29/hello-2015/</guid>
+        <link>http://localhost:4000/2015/01/29/hello-2015/</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/01/29/hello-2015/</guid>
         
         <category>生活</category>
         
