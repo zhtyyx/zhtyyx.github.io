@@ -2,7 +2,7 @@
 layout:     post
 title:      "Hello world, a simple word"
 subtitle:   "Keynote: Begin new life"
-date:       2021-09-10 12:00:00
+date:       2021-09-10
 author:     "Hunter"
 header-img: "img/post-bg-js-version.jpg"
 tags:
