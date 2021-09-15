@@ -1,0 +1,99 @@
+---
+layout:     post
+title:      "面向对象编程（OOP）in Python 2nd"
+subtitle:   "Python 基础"
+date:       2021-04-13
+author:     "Hunter"
+header-img: "img/pythonoop1.jpg"
+tags:
+    - Python
+---
+# 面向对象编程（OOP）in Python 2nd
+
+上篇文章定义了一个狗类，本文中我们接着进行实例化对象的介绍。首先，我们开始创建一些狗。如图所示，创建一个没有属性和方法的类；
+
+从类中创建一个新的对象被称为实例化对象，你可以通过类名+括号，如图所示的操作来实例化一个对象。
+
+![img](https://pic1.zhimg.com/v2-7639896ffbc79b91661ba5e2e27db00c_b.png)
+
+现在我们在0x00000252239A4F70有一个狗对象了。“0x00000252239A4F70”是内存地址，代表这个狗对象存在哪。
+
+再创建第二只狗：
+
+![img](https://pic4.zhimg.com/v2-5e10a886cdbeea52053cc5a90e020f9b_b.png)
+
+注意到两只狗存在不同的内存地址，因为第二只狗是完全新的实例，与第一个实例化的狗对象是完全独立的。
+
+检验两只狗是否相同：
+
+![img](https://pic4.zhimg.com/v2-2877d223ec53f84e8d14e1f6fda24937_b.png)
+
+这个代码中，创建了两个狗对象，分别赋值，用==比较时发现结果为 False， 看来即使都是狗类的实例化，他们代表的也是完全不同的两个对象。
+
+这里的比较可以参考我的另一篇关于深拷贝、浅拷贝、赋值的文章。
+
+同时需注意 Python 中 is 和 == 进行比较运算时的不同。
+
+**类属性和实例属性：**
+
+现在开始创建带一个类属性和两个实例属性的新狗类：
+
+![img](https://pic2.zhimg.com/v2-89019883a5e6c22bb544e3a133622155_b.png)
+
+为了实例化这个类，你需要提供name和age（实例属性），不然Python就会抛出类型异常：
+
+![img](https://pic4.zhimg.com/v2-3c3eabdc495b51fc6213a6aa76e3a21b_b.png)
+
+提供name和age参数时，将参数放进类后面的括号里：
+
+![img](https://pic3.zhimg.com/v2-cd51c20cb5e7f9c759817d9cb141dfca_b.png)
+
+这将会创建两个新狗的实例，一只叫Buddy， 9岁， 另外一只叫Miles， 4岁。
+
+狗类的.__init__()明明有三个参数，为啥我们只传递了两个参数？
+
+ 当你实例化一个狗对象时，Python 创建了一个新的实例，并将其传递给.__init__()的第一个参数。这实际上没理会 self 参数， 所以你只需要考虑 name 和 age 参数即可。
+
+接下来就可以通过点标记法来访问这两个实例的属性了：
+
+![img](https://pic4.zhimg.com/v2-671d68475ec223d9fdd8647cffab6e1f_b.png)
+
+也可以通过同样的方式访问类属性：
+
+![img](https://pic3.zhimg.com/v2-03976d02d1f73e45c8d7104a7446b8d2_b.png)
+
+使用类来组织数据的最大优点是，实例可以保证有那些你期望的属性。所有的狗实例都有 species, name, age 属性， 你可以自信的用这些属性，确信这些属性必然有其值。
+
+这些属性不仅保证存在，而且可以动态改变：
+
+![img](https://pic2.zhimg.com/v2-e475ef757617b735cf17eb9dc0531939_b.png)
+
+实例的类属性也可以动态改变，就不附图了。
+
+这意味着，传统的对象默认是可变的。一个对象如果可以动态改变，那么它就是可变的。例如，列表和字典是可变的，而字符串是不可变的。
+
+**实例方法**
+
+实例方法是定义在类内部的方法，只能被这个类的实例所调用，就像.__init__() . 实例方法的第一个参数总是 self
+
+![img](https://pic4.zhimg.com/v2-cd0e4b55a62dca127a5a44837474f81b_b.png)
+
+如图所示，创建了两个实例方法 description 和 speak, 如下图调用这两个方法查看返回：
+
+![img](https://pic3.zhimg.com/v2-d8d3f66f35d687480e30b443e831ae5e_b.png)
+
+在上面的狗类中，description() 返回一只名为miles的狗。我们在写类时，返回实例中有用信息是个好主意，但这个方法并不 Pythonic, 得到的信息晦涩难懂:
+
+![img](https://pic3.zhimg.com/v2-4303cbab6fc81191721d628b03cdae2e_b.png)
+
+可以使用 .__str__()替代。在我们定义类时可以用这个方法替代 .description() :
+
+![img](https://pic3.zhimg.com/v2-95f19e494b947f6b77af0563f2b1a2c6_b.png)
+
+这次输出变成如下：
+
+![img](https://pic3.zhimg.com/v2-3921d90020ebcd340d673ee51b0a9092_b.png)
+
+像.__init__()   .__str__() 这样的方法被称为“dunder methods”因为他们开头和结束都有双下划线。Python 中有很多这样的方法来定制类。
+
+下一节中，你将会了解如何从一个类中创建另一个类。

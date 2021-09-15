@@ -7,8 +7,6 @@ author:     "Hunter"
 header-img: "img/git.jpg"
 tags:
     - git
-    - 技术
-    - 后端
 ---
 
 

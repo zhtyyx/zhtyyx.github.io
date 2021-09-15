@@ -1,0 +1,113 @@
+---
+layout:     post
+title:      "面向对象编程（OOP）in Python 3rd"
+subtitle:   "Python 基础"
+date:       2021-04-21
+author:     "Hunter"
+header-img: "img/pythonoop1.jpg"
+tags:
+    - Python
+---
+
+# 面向对象编程（OOP）in Python 3rd
+
+前面我们介绍了面向对象的基本概念，讲了类、实例、类方法、实例方法、类属性、实例属性，并且我们做了一些简单的打印处理。
+
+本文我们要讲的是如何从其他类之中继承，从而生成新的类。
+
+**继承：**是一个类继承另一个类的属性和方法的过程。新生成的类叫做“子类”，生成子类的那个类叫做“父类”。子类可以覆盖重写父类的属性和方法。
+
+换句话来说，子类可以继承所有父类的属性和方法，但是能够自己制定自己的方法和属性
+
+这个类比并不完美，你可以将类继承与基因的继承一起思考：
+
+你可能从你的母亲那里继承头发的颜色。这是你的一个原生属性。假设你决定把你的头发颜色染紫，而你的母亲没有紫色头发，就说你覆盖重写了你的发色。
+
+将狗类修改为如下：
+
+![img](https://pic3.zhimg.com/v2-cfc2fa52a604336641f51a7112d99732_b.png)
+
+实例化四个狗：
+
+![img](https://pic4.zhimg.com/v2-b771eb810d46f495b863e19e94155b2f_b.png)
+
+正如每个血统的狗行为举止不同，让我们使他们发出不同叫声：
+
+![img](https://pic1.zhimg.com/v2-695932954564bca6cb9c14313ddfaaf4_b.png)
+
+在上述代码中我们每次调用speak()时都传递了字符串，低效且不方便。而且每次传递的叫声字符串应该随着狗品种不同而变化，但在这里我们是每次人工传递了不同的正确叫声。
+
+将类回归到：
+
+![img](https://pic2.zhimg.com/v2-9a6fa1bb653bed36a14dffc5102ca10d_b.png)
+
+我们可以通过为每种狗创建一个狗类的子类，这允许我们扩展每个子类的功能，包括为speak()指定默认的参数。按照如下所示的方式创建子类，括号中写父类的名称。
+
+![img](https://pic4.zhimg.com/v2-ed3d3a3cd6d191328d8b36487996a37b_b.png)
+
+![img](https://pic2.zhimg.com/v2-acc92254fd231b9aff0d3888b810c885_b.png)
+
+一波操作：
+
+![img](https://pic4.zhimg.com/v2-66ecefd2d83af4b83bea5d933b176bbf_b.png)
+
+检查类的类型：
+
+![img](https://pic2.zhimg.com/v2-c40d12986ea872d6c88efc5d6eb05295_b.png)
+
+检查jim还是不是狗类：
+
+![img](https://pic1.zhimg.com/v2-164d58b3ff816e28a6a96ad5be2f21ac_b.png)
+
+更一般地，所有从子类中创建的对象是父类的一个实例，即使他们可能不是其他子类的实例。
+
+现在你已经为不同血统的狗创建不同的子类了，让我们为他们创建不同的叫声，方法是在子类中重写speak()
+
+为了覆盖在父类中定义的方法，我们要定义一个跟父类中对应方法名字相同的方法：
+
+![img](https://pic4.zhimg.com/v2-127e333532b5c3a07c603381f8f6e49f_b.png)
+
+现在JackRussellTerrier 类中定义了一个speak方法。现在我们可以不传递字符串调用：
+
+![img](https://pic2.zhimg.com/v2-dd8cb8e3ea5b7cffc7cc2fa89979d64d_b.png)
+
+如果 miles 生气了，叫声不一样了，我们还是可以传递字符串调用：
+
+![img](https://pic1.zhimg.com/v2-b82fd6a7e16f278b091a0609e4f22b90_b.png)
+
+要记得一件事：类继承时，对父类的改变将会改变子类，只要子类中未覆盖要更改的属性或者方法，就会发生这种情况。
+
+![img](https://pic2.zhimg.com/v2-6beb79c66bf67c9062ea3ad5334435c1_b.png)
+
+然而，如果子类中覆盖了，如下所示：
+
+![img](https://pic3.zhimg.com/v2-e60d005952249a203dd67080a584002a_b.png)
+
+有时候完全覆盖父类的方法是有意义的，但是在这个实例中，我们不希望JackRussellTerrier失去任何对Dog.speak()进行的修改。
+
+为了实现如下目标，你在子类中仍需要定义speak() ，但是不要明确定义输出字符串。你需要使用子类中的speak() 方法， 传递相同的参数来调用狗类中的speak() ：
+
+通过使用super()：
+
+当你调用super().speak(sound)时，Python检索其父类，并传递sound参数
+
+![img](https://pic1.zhimg.com/v2-b123d3ecc52feb2808937d2c7cb14ad8_b.png)
+
+现在如果你再调用miles.speak()， 你会看到用更新后的狗类的speak() 方法输出了新字符串！
+
+ 上述例子中，类的继承是非常直接的，JackRussellTerrier 只有一个父类，在真实世界中，类的继承可能是非常复杂的。
+
+super() 除了作为父类来查找方法和属性外，还遍历整个类层次结构以找到匹配的方法和属性，如果你不小心，super() 可能会产生令人惊讶的结果。
+
+## 结论
+
+本教程中，你学到了Python中如何实现面向对象编程。
+
+你学到：
+
+- 如何定义一个类。类是对象的蓝图
+- 从类中实例化对象
+- 使用属性和方法定义一个对象的属性和行为
+- 使用继承来从父类创建子类
+- 使用super()来引用父类
+- 检查一个对象是否继承自另一个类
