@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "git 核心操作手册"
+title:      "git 核心操作手册（四）"
 subtitle:   "git 分支管理 & debug流程"
 date:       2021-03-01
 author:     "Hunter"

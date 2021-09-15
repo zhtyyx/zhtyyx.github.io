@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "git 核心操作手册"
+title:      "git 核心操作手册（三）"
 subtitle:   "git 基本操作"
 date:       2021-02-11
 author:     "Hunter"
