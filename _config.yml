@@ -14,7 +14,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 RSS: false
 weibo_username:     zhtyyx
 zhihu_username:     zhtyyx
-github_username:    zhtyyx
+github_username:  zhtyyx
 twitter_username:  zhtyyx
 facebook_username:  zhtyyx
 
@@ -82,20 +82,20 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "zhtyyx",
-        href: "https://zhtyyx.com/"
+        title: "LinkedIn",
+        href: "https://www.linkedin.com/in/%E6%B5%A9%E7%94%B0-%E5%BC%A0-02b188199/"
     },{
-        title: "Foo",
-        href: "#"
+        title: "翻译网站",
+        href: "zhtyyx.com"
     },{
-        title: "Bar",
-        href: "#"
+        title: "知乎",
+        href: "https://www.zhihu.com/people/zhtyyx"
     },{
-        title: "Example Friends",
-        href: "#"
+        title: "Github",
+        href: "https://github.com/zhtyyx"
     },{
-        title: "It helps SEO",
-        href: "#"
+        title: "Mail",
+        href: "zhtyyx@gmail.com"
     }
 ]
 
