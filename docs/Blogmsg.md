@@ -1,3 +1,7 @@
+---
+header-img: "img/mountain.jpg"
+---
+
 # Blog purpose
 
 这个网站主要包含如下内容：

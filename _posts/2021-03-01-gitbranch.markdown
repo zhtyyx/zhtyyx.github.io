@@ -4,7 +4,7 @@ title:      "git 核心操作手册（四）"
 subtitle:   "git 分支管理 & debug流程"
 date:       2021-03-01
 author:     "Hunter"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/git.jpg"
 tags:
     - git
     - 技术

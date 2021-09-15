@@ -4,7 +4,7 @@ title:      "git 核心操作手册（二）"
 subtitle:   "初次使用 git"
 date:       2021-01-31
 author:     "Hunter"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/git.jpg"
 tags:
     - git
     - 技术

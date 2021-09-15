@@ -4,7 +4,7 @@ title:      "Hello world, a simple word"
 subtitle:   "Keynote: Begin new life"
 date:       2021-09-10
 author:     "Hunter"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/mountain.jpg"
 tags:
     - 闲聊
     - 生活
