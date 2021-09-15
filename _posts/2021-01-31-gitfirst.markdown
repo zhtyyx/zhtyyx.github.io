@@ -1,0 +1,69 @@
+---
+layout:     post
+title:      "git 核心操作手册"
+subtitle:   "初次使用 git"
+date:       2021-01-31
+author:     "Hunter"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - git
+    - 技术
+    - 后端
+---
+
+###***前情提要：安装 git***
+## 连接远程仓库并传输
+### 注册并配置
+
+ - 注册github账号
+ - 创建SSH key，在用户主目录（电脑主目录）下查看是否有.ssh目录。该目录下是否有id_rsa（私钥，妥善保管）和id_rsa.pub（公钥，可告知别人协同开发），如果有，进入第三步，如果没有，创建：
+	- `ssh-keygen -t rsa -C "自己的邮箱账号"`
+ - 登录github，打开"Account settings"， "SSH Keys"页面：
+	- add ssh key，填上任意title
+	- 在key文本框填上id_rsa.pub(公钥)
+### 创建远程仓库
+ - 在github中，右上角Create a new repo，创建一个新的仓库
+ - 填入仓库名，点Create repository， 就创建了一个远程库。
+ - 这是一个空repo，之后我们可以：
+ 	- 从这个repo中clone出一个新的repo
+ 	- 将本地已有的仓库关联到这个repo上，并将本地仓库内容推送到该空repo上
+- 关联本地仓库到远程的方法：
+	- `git remote add "远程仓库名（默认为origin） git@github.com:git账户名/远程仓库名.git"`
+- 将本地仓库推送到远程仓库：
+	- `git push -u origin master(本质上是将当前分支master推送到远程)`
+### 连接警告
+第一次使用git clone或者git push连接github时会得到一个连接警告，
+
+`The authenticity of host 'github.com (xx.xx.xx.xx)' can't be established.
+RSA key fingerprint is xx.xx.xx.xx.xx.
+Are you sure you want to continue connecting (yes/no)?`
+
+这是因为git使用SSH连接，SSH第一次连接需要确认github中的key的指纹信息是否来自github服务器，yes即可。
+这之后，git会输出warning并告诉你已经将github中的key添加进本机的信任列表。该警告只出现一次。
+之后就可以愉快的开始开发了！
+---
+## 如何使用 *git* 开始你的工作？
+#### 如何提交自己的修改？
+
+ - 首先尝试拉取远程代码到本地，看别人有没有push代码：
+    - `git fetch`
+ - 如果可以抓到远程代码，则先拉取过来：
+ 	- `git pull`
+  - 如果抓不到远程比你更新的代码，说明你的是最新的，尝试推送自己的修改：
+      -  `git push origin <分支名> `
+ - 如果推送失败，则可能远程分支比本地分支更新，可能在fetch后远程有修改，此时先拉取代码:
+ 	- `git pull`
+- 如果合并发生冲突，则先解决冲突并提交(详见git 解决冲突)
+
+#### 提交修改常见的问题：
+
+ - git pull 提示`no tracking information`， 说明本地分支和远程分支的链接关系没有创建，需要创建链接：
+ 	- `git branch --set-upstream-to 本地分支名 远程分支名`
+ - 查看远程库信息：
+ 	- `git remote -v`
+- 从本地推送分支，使用：
+	- `git push origin <分支名>`
+	- 如果推送失败，先用`git pull`抓取远程新的提交。
+- 在本地创建和远程分支对应的分支，使用：
+	- git checkout -b 本地分支名 origin/远程分支名，本地分支名最好和远程分支名相同
+- 有冲突要先解决冲突！

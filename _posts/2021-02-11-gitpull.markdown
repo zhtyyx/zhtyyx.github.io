@@ -1,0 +1,91 @@
+---
+layout:     post
+title:      "git 核心操作手册"
+subtitle:   "git 基本操作"
+date:       2021-02-11
+author:     "Hunter"
+header-img: "img/post-bg-js-version.jpg"
+tags:
+    - git
+    - 技术
+    - 后端
+---
+
+## 拉取：
+- 获取remote中最新的修改：
+            `git fetch`
+- 将remote中的文件拉取到本地：
+            `git pull`
+- 从远程库中克隆repo：
+	- github拉取
+           ` git clone git@github.com:git名/git仓库名.git`
+     - 码云拉取
+           `git clone git@gitee.com:git名/git仓库名.git`
+       
+## 删除
+- 本地删除文件后，如果要从版本库删除：
+    - `git rm 文件名`
+    - `git commit -m “instruction”`
+
+- 本地删除文件后，如果不想从版本库删除(不想删，想恢复文件)：
+    - `git checkout -- 文件名`
+## 提交
+- 添加文件：
+  - `git add 文件名`
+  - `git add -A` 一键add
+- 提交文件:
+  - `git commit -m "提交文件时的说明"`
+- 推送到远程仓库:
+  - 普通推送: `git push`
+  - 强行推送: `git push -u origin master -f`
+  
+
+## 解决合并冲突
+***当两个分支上同时对同一文件有不同的提交时：***
+### 产生冲突
+    <<<<<<< HEAD
+    小张的提交
+    =======
+    小李的提交
+    >>>>>>> 小李的分支名
+### 解决冲突
+
+ - 将上面的代码改为你想要的提交效果，并去掉多余的符号
+ - 再提交：`git add 文件名`
+- 查看分支的合并情况：`git log`或者`git log --graph`
+
+## 查看记录/命令/版本区别
+-  查看提交记录
+    - `git log`
+- 查看可视化提交记录
+    - `git log --graph --pretty=oneline --abbrev-commit`
+- 查看此时提交状态
+    - `git status`
+- 查看最近每一次命令
+    - `git reflog`
+- 查看工作区和版本库中最新版本的区别
+    - `git diff HEAD -- 文件名`
+
+
+## git 回退版本/丢弃修改
+#### 回退版本（丢弃commit之后的操作）
+ - 回退一个版本（将版本退回上一个commit的状态）：
+   - `git reset --hard 	HEAD^`
+ - 回退两个版本：
+   - `git reset --hard HEAD^^`
+ - 回退100个版本：
+   - `git reset --hard HEAD~100`
+ - 回退到指定版本：
+   - `git reset --hard 版本号`
+ - 可以使用`git log`查看版本号
+ 
+ #### 丢弃修改（修改文件后，并未`git add`的情况）
+ 
+   - `git checkout --filename`
+ 
+ #### 丢弃修改（修改文件后，已经`git add`了，但并未`git commit`的情况）
+ 
+   - `git reset HEAD filename`
+  - `git checkout --filename`
+
+
