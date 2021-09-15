@@ -95,7 +95,7 @@ friends: [
         href: "https://github.com/zhtyyx"
     },{
         title: "Mail",
-        href: "zhtyyx@gmail.com"
+        href: "mailto:info@example.com"
     }
 ]
 
