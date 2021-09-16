@@ -27,6 +27,7 @@ tags:
 
 - 本地删除文件后，如果不想从版本库删除(不想删，想恢复文件)：
     - `git checkout -- 文件名`
+
 ## 提交
 - 添加文件：
   - `git add 文件名`
@@ -40,12 +41,14 @@ tags:
 
 ## 解决合并冲突
 ***当两个分支上同时对同一文件有不同的提交时：***
+
 ### 产生冲突
     <<<<<<< HEAD
     小张的提交
     =======
     小李的提交
     >>>>>>> 小李的分支名
+
 ### 解决冲突
 
  - 将上面的代码改为你想要的提交效果，并去掉多余的符号
@@ -66,6 +69,7 @@ tags:
 
 
 ## git 回退版本/丢弃修改
+
 #### 回退版本（丢弃commit之后的操作）
  - 回退一个版本（将版本退回上一个commit的状态）：
    - `git reset --hard 	HEAD^`
@@ -76,14 +80,14 @@ tags:
  - 回退到指定版本：
    - `git reset --hard 版本号`
  - 可以使用`git log`查看版本号
- 
- #### 丢弃修改（修改文件后，并未`git add`的情况）
+
+#### 丢弃修改（修改文件后，并未`git add`的情况）
  
    - `git checkout --filename`
- 
- #### 丢弃修改（修改文件后，已经`git add`了，但并未`git commit`的情况）
+   
+#### 丢弃修改（修改文件后，已经`git add`了，但并未`git commit`的情况）
  
    - `git reset HEAD filename`
-  - `git checkout --filename`
+   - `git checkout --filename`
 
 
