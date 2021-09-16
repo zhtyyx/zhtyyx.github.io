@@ -9,22 +9,22 @@ tags:
     - git
 ---
 
-
 ## git显示颜色
+
 - `git config --global color.ui true`
 
 ## git忽略文件
 
- - 忽略原则：系统自动生成的文件、编译生成的中间文件&可执行文件、带有自己信息的敏感文件 
-   - 如果想添加一个文件，但该文件被忽略，则
-      - git add -f 文件名
-      - 修改.gitignore文件内容
+- 忽略原则：系统自动生成的文件、编译生成的中间文件&可执行文件、带有自己信息的敏感文件
+    - 如果想添加一个文件，但该文件被忽略，则
+        - git add -f 文件名
+        - 修改.gitignore文件内容
 
 ## git 配置别名
-- 	给 git status 配置别名
-	- `git config --global alias.st status`
--  给 git commit 配置别名
-	- `git config --global alias.ci commit`
+
+- 给 git status 配置别名 - `git config --global alias.st status`
+- 给 git commit 配置别名
+    - `git config --global alias.ci commit`
 - 配置一个吊炸天的 git log
-	- `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
+    - `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
 - 配置文件应该放在：.git/config文件中
