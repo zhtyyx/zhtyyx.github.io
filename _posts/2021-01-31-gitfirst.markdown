@@ -9,7 +9,7 @@ tags:
     - git
 ---
 
-###***前情提要：安装 git***
+***前情提要：安装 git***
 ## 连接远程仓库并传输
 ### 注册并配置
 
@@ -19,6 +19,7 @@ tags:
  - 登录github，打开"Account settings"， "SSH Keys"页面：
 	- add ssh key，填上任意title
 	- 在key文本框填上id_rsa.pub(公钥)
+
 ### 创建远程仓库
  - 在github中，右上角Create a new repo，创建一个新的仓库
  - 填入仓库名，点Create repository， 就创建了一个远程库。
