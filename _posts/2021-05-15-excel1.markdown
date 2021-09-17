@@ -1,0 +1,97 @@
+---
+layout:     post
+title:      "使用Python操作Excel（一）：在开始之前"
+subtitle:   "excel"
+date:       2021-05-15
+author:     "Hunter"
+header-img: "img/complexity.jpg"
+tags:
+    - Excel
+    - Python
+---
+
+
+本系列文章是对Real Python网站上的“A Guide to Excel Spreadsheets in Python With openpyxl”系列课程做的翻译。原文如下：
+
+[A Guide to Excel Spreadsheets in Python With openpyxl – Real Python](https://realpython.com/openpyxl-excel-spreadsheets-python/)
+
+转载需私信或者评论联系我取得许可并注明出处。如有翻译不足之处，请大家不吝指出。
+
+在开始之前，请在如下链接下载操作使用的数据集：
+
+[Dataset for openpyxl Tutorial – Real Python](https://realpython.com/bonus/openpyxl-sample-dataset/)
+
+## 引子：
+
+- 我们有时候必须使用Excel，要么是因为你老板喜欢用，要么是因为市场需要。既然必须要用，那就学吧，是时候使用openpyxl来方便操作Excel了。
+- 使用表格操作大量数据集合，无需任何技术背景，直观而且用户友好。这就是我们现在广泛的使用的原因。
+
+## 在本课程中，你可以学到如何使用openpyxl来：
+
+- 自信的操作Excel数据表
+- 从数据表中操作信息
+- 创建各种简单的、复杂的数据表，包括给表格添加格式，图表等等
+
+这篇文章是写给有足够的Python数据结构（数据类型）知识的中级开发者的，你需要了解包括但并不限于dicts, lists，OOP和其他中级的知识。
+
+## 应用场景：
+
+- 重复性的将复杂的表格数据录入数据库
+- 将数据库数据导出到表格
+- 给一个已经存在的数据表追加信息
+
+## 一些基本的Excel术语
+
+- 数据表或工作簿（Spreadsheet or Workbook）
+
+> 数据表是你创建并工作的主文件
+
+- 工作表或表格（Worksheet or Sheet）
+
+> 工作表用于区分相同的数据表中不同类型的内容。一个数据表可以有一个或以上的工作表
+
+- 列（column）
+
+> 列是垂直的，可以理解为属性，可以被表示为大写字母，如A
+
+- 行（row）
+
+> 行是水平的，可以被表示为数字，如1
+
+- 单元格（cell）
+
+> 单元格是行和列的结合，通过大写字母和数字来定位，如：A1
+
+## 准备：
+
+现在你已经认识到了使用openpyxl的好处，现在我们通过安装它来开始吧！在本课程中，你应该使用：
+
+- Python 3.7 或更高
+- openpyxl 2.6.2或更高
+
+通过如下命令安装openpyxl:
+
+```
+pip install openpyxl
+```
+
+在安装好包之后，你现在可以使用如下代码创建一个超级简单的数据表
+
+```
+from openpyxl import Workbook
+
+# 注意大小写问题
+workbook = Workbook()
+sheet = workbook.active
+
+sheet["A1"] = "hello"
+sheet["B1"] = "world!"
+
+workbook.save(filename = "hello_world.xlsx")
+```
+
+上述的代码会在你运行代码的目录下创建"hello_world.xlsx"文件，如果你打开这个文件，会看到如下所示：
+
+![img](https://pic4.zhimg.com/v2-c8f8302d885dc238e6fe27dca3f66017_b.png)
+
+哇，你的第一个Excel表格创建完成了！
