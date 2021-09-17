@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Python中的赋值、浅拷贝、深拷贝"
-subtitle:   "性能优化"
+subtitle:   "Python语法"
 date:       2021-08-08
 author:     "Hunter"
 header-img: "img/copy.jpg"
