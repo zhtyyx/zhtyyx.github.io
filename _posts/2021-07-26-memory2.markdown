@@ -2,7 +2,7 @@
 layout:     post
 title:      "Python内存管理（二）：垃圾回收机制和内存管理机制的实现"
 subtitle:   "内存管理"
-date:       2021-07-26
+date:       2022-07-26
 author:     "Hunter"
 header-img: "img/memory2.jpg"
 tags:

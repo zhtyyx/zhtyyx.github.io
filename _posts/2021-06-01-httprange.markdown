@@ -2,7 +2,7 @@
 layout:     post
 title:      "HTTP Range 请求总结"
 subtitle:   "HTTP Range"
-date:       2021-06-01
+date:       2023-06-01
 author:     "Hunter"
 header-img: "img/http.jpg"
 tags:

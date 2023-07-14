@@ -2,7 +2,7 @@
 layout:     post
 title:      "面向对象编程（OOP）in Python 1st"
 subtitle:   "Python 基础"
-date:       2021-04-08
+date:       2023-04-08
 author:     "Hunter"
 header-img: "img/pythonoop1.jpg"
 tags:

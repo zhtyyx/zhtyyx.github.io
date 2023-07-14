@@ -2,7 +2,7 @@
 layout:     post
 title:      "使用Python操作Excel（二）：读取数据表"
 subtitle:   "excel"
-date:       2021-05-26
+date:       2023-05-26
 author:     "Hunter"
 header-img: "img/excel2.jpg"
 tags:

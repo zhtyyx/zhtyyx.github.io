@@ -2,7 +2,7 @@
 layout:     post
 title:      "redis 高级特性"
 subtitle:   "redis"
-date:       2021-01-19
+date:       2023-01-19
 author:     "Hunter"
 header-img: "img/redis.jpg"
 tags:

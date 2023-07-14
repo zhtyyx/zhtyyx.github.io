@@ -2,7 +2,7 @@
 layout:     post
 title:      "百度飞桨 PaddleOCR 初体验(一) 日语"
 subtitle:   "Paddle OCR"
-date:       2021-05-01
+date:       2023-05-01
 author:     "Hunter"
 header-img: "img/paddle.jpg"
 tags:

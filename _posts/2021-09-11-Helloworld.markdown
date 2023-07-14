@@ -2,7 +2,7 @@
 layout:     post
 title:      "Welcome to Hunter's Blog"
 subtitle:   "We choose to go to the moon"
-date:       2021-09-10
+date:       2022-09-10
 author:     "Hunter"
 header-img: "img/welcome.jpg"
 tags:

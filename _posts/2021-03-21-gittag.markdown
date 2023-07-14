@@ -2,7 +2,7 @@
 layout:     post
 title:      "git 核心操作手册（五）"
 subtitle:   "git 标签"
-date:       2021-03-21
+date:       2023-03-21
 author:     "Hunter"
 header-img: "img/git.jpg"
 tags:

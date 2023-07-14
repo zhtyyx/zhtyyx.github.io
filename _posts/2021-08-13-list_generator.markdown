@@ -2,7 +2,7 @@
 layout:     post
 title:      "Python中的列表推导式，生成器"
 subtitle:   "Python语法"
-date:       2021-08-13
+date:       2022-08-13
 author:     "Hunter"
 header-img: "img/copy.jpg"
 tags:

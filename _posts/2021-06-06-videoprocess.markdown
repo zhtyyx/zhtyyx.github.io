@@ -2,7 +2,7 @@
 layout:     post
 title:      "RTSP/RTMP/HLS 点播直播对比"
 subtitle:   "视频协议对比"
-date:       2021-06-06
+date:       2023-06-06
 author:     "Hunter"
 header-img: "img/http.jpg"
 tags:

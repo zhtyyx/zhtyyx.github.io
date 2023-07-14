@@ -2,7 +2,7 @@
 layout:     post
 title:      "Python内存管理（一）：预备知识"
 subtitle:   "内存管理"
-date:       2021-07-10
+date:       2023-07-10
 author:     "Hunter"
 header-img: "img/memory1.jpg"
 tags:
